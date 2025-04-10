@@ -31,6 +31,10 @@ h2 {
     color: var(--THEMECOLOR);
 }
 
+button, a {
+    -webkit-tap-highlight-color: transparent;
+}
+
 /* body css */
 /* Light theme (default) */
 body {
