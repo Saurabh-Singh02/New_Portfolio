@@ -90,7 +90,7 @@ body.dark-theme .hero-left button:hover {
 }
 
 body.dark-theme .skills .card {
-    border: 1px solid var(--THEMECOLOR);
+    border: 2px solid var(--THEMECOLOR);
     color: #ffffff;
 }
 
@@ -119,12 +119,6 @@ body.dark-theme .service-card:hover {
     box-shadow: 3px 3px 7px 0px var(--THEMECOLOR);
   }
 
-/* body.dark-theme .hero {
-    background-image: url("images/wp10959595-orange-and-grey-wallpapers.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    text-align: center;
-} */
 
 
 /* Optional transition */
