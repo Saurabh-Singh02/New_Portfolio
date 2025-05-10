@@ -10,7 +10,7 @@ html {
 }
 
 :root {
-    --THEMECOLOR: #fb6f41;
+    --THEMECOLOR: #f10060;
 }
 
 /* Utility Classes */
@@ -459,7 +459,7 @@ body,
 }
 
 .project-card a:hover {
-    background: #f67d31;
+    background: #d50558;
 }
 
 /* Contact */
