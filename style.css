@@ -1,9 +1,9 @@
 /* Custom Variables */
 :root {
-    --primary-color: #d8004f;
-    --primary-light: #ff4d82;
-    --primary-dark: #b3003d;
-    --bs-primary: #dc0050 !important;
+    --primary-color: #00a6e3;
+    --primary-light: #50ff4d;
+    --primary-dark: #e8e523;
+    --bs-primary: #6c13c6 !important;
 }
 
 [data-bs-theme="dark"] {
@@ -238,7 +238,7 @@ body {
 }
 
 [data-bs-theme="dark"] .text-muted {
-    color: #adb5bd !important;
+    color: #e3ebf4 !important;
 }
 
 [data-bs-theme="dark"] .form-control {
