@@ -1,627 +1,447 @@
 <!DOCTYPE html>
-<html lang="en" data-bs-theme="light">
-
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Saurabh Singh - A Full Stack Developer">
-    <title>Saurabh Singh</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Saurabh Singh - A Full Stack Developer">
+  <title>Saurabh Singh — Full Stack Developer</title>
 
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Bootstrap Icons -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="style.css">
+  <!-- Bootstrap CSS (grid + utilities) -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
-    <!-- Google Font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="style.css">   
 
+  
 </head>
 
 <body>
-    <!-- Header -->
-    <header class="fixed-top bg-white shadow-sm">
-        <nav class="navbar navbar-expand-lg navbar-light py-3">
-            <div class="container">
-                <a class="navbar-brand fw-bold text-primary" href="#">SAURABH SINGH</a>
+  <!-- Header -->
+  <header class="site-header">
+    <nav class="navbar navbar-expand-lg py-0">
+      <div class="container">
+        <a class="brand" href="#hero">
+          <span class="brand-mark">SS</span>
+          <span>Saurabh<span class="grad-text">.</span>Singh</span>
+        </a>
 
-                <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarNav">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link" href="#hero">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#about">About</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#services">Services</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#projects">Projects</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#contact-section">Contact</a>
-                        </li>
-                    </ul>
-
-                    <button id="theme-button" class="btn btn-outline-primary ms-3">
-                        <i class="bi bi-sun-fill"></i>
-                    </button>
-                </div>
-            </div>
-        </nav>
-    </header>
-
-    <main class="pt-2">
-        <!-- Hero Section -->
-        <section id="hero" class="hero-section py-1">
-            <div class="container">
-                <div class="row align-items-center min-vh-100 py-1">
-                    <div class="col-lg-6 order-lg-1 order-2">
-                        <div class="hero-content">
-                            
-                            <h1 class="hero-title display-4 fw-bold mb-3">
-                                Hi, I'm <span class="text-primary">Saurabh Singh</span>
-                            </h1>
-                            <p class="hero-subtitle lead text-white mb-4">
-                                I craft digital experiences through code, turning ideas into functional and beautiful
-                                web applications.
-                            </p>
-                            <div class="hero-typed mb-4">
-                                <span class="text-primary fw-semibold fs-5">I am a </span>
-                                <span id="element" class="text-primary fw-bold fs-5"></span>
-                            </div>
-                            <div class="hero-buttons d-flex flex-wrap gap-3">
-                                <a href="Saurabh-Resume.pdf" class="btn btn-primary btn-lg px-4 py-2">
-                                    <i class="bi bi-download me-2"></i>Download Resume
-                                </a>
-                                <a href="#contact-section" class="btn btn-outline-primary btn-lg px-4 py-2">
-                                    <i class="bi bi-envelope me-2"></i>Get In Touch
-                                </a>
-                            </div>
-                            <div class="hero-stats mt-5 pt-3">
-                                <div class="row g-4">
-                                    <div class="col-4">
-                                        <div class="text-center">
-                                            <div class="h3 fw-bold text-primary mb-1">2+</div>
-                                            <div class="text-muted small">Years Experience</div>
-                                        </div>
-                                    </div>
-                                    <div class="col-4">
-                                        <div class="text-center">
-                                            <div class="h3 fw-bold text-primary mb-1">15+</div>
-                                            <div class="text-muted small">Projects Completed</div>
-                                        </div>
-                                    </div>
-                                    <div class="col-4">
-                                        <div class="text-center">
-                                            <div class="h3 fw-bold text-primary mb-1">10+</div>
-                                            <div class="text-muted small">Happy Clients</div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-6 order-lg-2 order-1 text-center mb-5 mb-lg-0">
-                        <div class="hero-image-wrapper position-relative">
-                            <div class="profile-image-container mx-auto">
-                                <img src="images/profile3.png" alt="Saurabh Singh" class="profile-image img-fluid">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            </div>
-        </section>
-
-        <!-- About Section -->
-        <section id="about" class="py-5 bg-light">
-            <div class="container">
-                <h2 class="text-center mb-5 section-title">ABOUT ME</h2>
-
-                <div class="row align-items-center">
-                    <div class="col-lg-8 mb-5">
-                        <div class="about-content">
-                            <div class="about-intro mb-4">
-                                <p class="lead fw-semibold text-dark">
-                                    Passionate Full Stack Developer from Bareilly, Uttar Pradesh with expertise in
-                                    creating robust, scalable web applications using modern technologies.
-                                </p>
-                            </div>
-
-                            <div class="about-details">
-                                <p class="mb-3">
-                                    I specialize in the <strong class="text-primary">Python web development</strong> and
-                                    <strong class="text-primary">Python Django</strong> for building full-stack
-                                    applications. With a strong foundation in both frontend and backend development, I
-                                    create seamless digital experiences that solve real-world problems.
-                                </p>
-
-                                <p class="mb-3">
-                                    My technical expertise includes <strong class="text-primary">RESTful API
-                                        development</strong>, <strong class="text-primary">database design</strong>, and
-                                    <strong class="text-primary">cloud deployment</strong>. I'm proficient in <strong
-                                        class="text-primary">React.js</strong> for building dynamic user interfaces and
-                                    <strong class="text-primary">Django</strong> for creating secure and scalable
-                                    backend systems.
-                                </p>
-
-                                <p class="mb-4">
-                                    I'm constantly learning new technologies and frameworks to stay updated with the
-                                    latest industry trends. Currently exploring <strong
-                                        class="text-primary">FastAPI</strong>, <strong
-                                        class="text-primary">Pydantic</strong>, and <strong class="text-primary">AWS
-                                        cloud services</strong> to enhance my development capabilities.
-                                </p>
-
-                                <div class="about-highlights row g-3">
-                                    <div class="col-md-6">
-                                        <div class="d-flex align-items-center">
-                                            <i class="bi bi-check-circle-fill text-primary me-2"></i>
-                                            <span>Full Stack Development</span>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <div class="d-flex align-items-center">
-                                            <i class="bi bi-check-circle-fill text-primary me-2"></i>
-                                            <span>Responsive Web Design</span>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <div class="d-flex align-items-center">
-                                            <i class="bi bi-check-circle-fill text-primary me-2"></i>
-                                            <span>Database Management</span>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <div class="d-flex align-items-center">
-                                            <i class="bi bi-check-circle-fill text-primary me-2"></i>
-                                            <span>API Integration</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-4">
-                        <div class="education-section">
-                            <div class="education-card bg-white p-4 rounded shadow-sm">
-                                <h3 class="h4 mb-4 text-primary border-bottom pb-3">
-                                    <i class="bi bi-mortarboard me-2"></i>Education
-                                </h3>
-
-                                <div class="education-timeline">
-                                    <!-- MCA -->
-                                    <div class="education-item position-relative ps-4 pb-4">
-                                        <div
-                                            class="timeline-dot position-absolute start-0 top-0 bg-primary rounded-circle">
-                                        </div>
-                                        <div class="education-content">
-                                            <div class="d-flex justify-content-between align-items-start mb-2">
-                                                <h4 class="h5 text-primary mb-1">Master of Computer Applications (MCA)
-                                                </h4>
-                                                <span
-                                                    class="badge bg-primary bg-opacity-10 text-primary small">2023-2025</span>
-                                            </div>
-                                            <p class="text-muted mb-2">
-                                                <i class="bi bi-building me-1"></i>Central University of Haryana,
-                                                Mahendragarh
-                                            </p>
-                                            <ul class="education-details list-unstyled small text-muted">
-                                                <li class="mb-1">
-                                                    <i class="bi bi-caret-right-fill text-primary me-1"></i>
-                                                    Advanced coursework in Software Engineering, Web Technologies, and
-                                                    Database Systems
-                                                </li>
-                                                <li class="mb-1">
-                                                    <i class="bi bi-caret-right-fill text-primary me-1"></i>
-                                                    Specialized in Full Stack Development and Cloud Computing
-                                                </li>
-                                                <li class="mb-1">
-                                                    <i class="bi bi-caret-right-fill text-primary me-1"></i>
-                                                    Completed major project on AI-Powered Waste Management System
-                                                </li>
-                                                <li class="mb-1">
-                                                    <i class="bi bi-caret-right-fill text-primary me-1"></i>
-                                                    GPA: 7.9/10.0
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-
-                                    <!-- BCA -->
-                                    <div class="education-item position-relative ps-4">
-                                        <div
-                                            class="timeline-dot position-absolute start-0 top-0 bg-primary rounded-circle">
-                                        </div>
-                                        <div class="education-content">
-                                            <div class="d-flex justify-content-between align-items-start mb-2">
-                                                <h4 class="h5 text-primary mb-1">Bachelor of Computer Applications (BCA)
-                                                </h4>
-                                                <span
-                                                    class="badge bg-primary bg-opacity-10 text-primary small">2019-2022</span>
-                                            </div>
-                                            <p class="text-muted mb-2">
-                                                <i class="bi bi-building me-1"></i>Bareilly College, Bareilly
-                                            </p>
-                                            <ul class="education-details list-unstyled small text-muted">
-                                                <li class="mb-1">
-                                                    <i class="bi bi-caret-right-fill text-primary me-1"></i>
-                                                    Core foundation in Programming, Data Structures, and Algorithms
-                                                </li>
-                                                <li class="mb-1">
-                                                    <i class="bi bi-caret-right-fill text-primary me-1"></i>
-                                                    Hands-on experience with C, C++, Java, and Web Development
-                                                </li>
-                                                <li class="mb-1">
-                                                    <i class="bi bi-caret-right-fill text-primary me-1"></i>
-                                                    Developed multiple web applications as academic projects
-                                                </li>
-                                                <li class="mb-1">
-                                                    <i class="bi bi-caret-right-fill text-primary me-1"></i>
-                                                    Percentage: 64.90/100.0
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- Quick Stats -->
-                            <div class="quick-stats mt-4">
-                                <div class="row g-3">
-                                    <div class="col-6">
-                                        <div class="stat-card text-center p-3 bg-white rounded shadow-sm">
-                                            <div class="h4 fw-bold text-primary mb-1">2+</div>
-                                            <div class="small text-muted">Years Experience</div>
-                                        </div>
-                                    </div>
-                                    <div class="col-6">
-                                        <div class="stat-card text-center p-3 bg-white rounded shadow-sm">
-                                            <div class="h4 fw-bold text-primary mb-1">15+</div>
-                                            <div class="small text-muted">Projects</div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Skills Section -->
-        <section class="skills py-5">
-            <div class="container">
-                <h2 class="text-center mb-5 section-title">SKILLS</h2>
-
-                <div class="row g-4 justify-content-center">
-                    <!-- HTML -->
-                    <div class="col-6 col-sm-4 col-md-3 col-lg-2">
-                        <div class="skill-card text-center p-3 rounded">
-                            <i class="bi bi-filetype-html display-6 text-primary mb-3"></i>
-                            <p class="fw-semibold mb-0">HTML</p>
-                        </div>
-                    </div>
-
-                    <!-- CSS -->
-                    <div class="col-6 col-sm-4 col-md-3 col-lg-2">
-                        <div class="skill-card text-center p-3 rounded">
-                            <i class="bi bi-filetype-css display-6 text-primary mb-3"></i>
-                            <p class="fw-semibold mb-0">CSS</p>
-                        </div>
-                    </div>
-
-                    <!-- JavaScript -->
-                    <div class="col-6 col-sm-4 col-md-3 col-lg-2">
-                        <div class="skill-card text-center p-3 rounded">
-                            <i class="bi bi-filetype-js display-6 text-primary mb-3"></i>
-                            <p class="fw-semibold mb-0">JavaScript</p>
-                        </div>
-                    </div>
-
-                    <!-- React -->
-                    <div class="col-6 col-sm-4 col-md-3 col-lg-2">
-                        <div class="skill-card text-center p-3 rounded">
-                            <i class="fab fa-react display-6 text-primary mb-3"></i>
-                            <p class="fw-semibold mb-0">React</p>
-                        </div>
-                    </div>
-
-                    <!-- Python -->
-                    <div class="col-6 col-sm-4 col-md-3 col-lg-2">
-                        <div class="skill-card text-center p-3 rounded">
-                            <i class="bi bi-filetype-py display-6 text-primary mb-3"></i>
-                            <p class="fw-semibold mb-0">Python</p>
-                        </div>
-                    </div>
-
-                    <!-- Django -->
-                    <div class="col-6 col-sm-4 col-md-3 col-lg-2">
-                        <div class="skill-card text-center p-3 rounded">
-                            <i class="bi bi-bootstrap display-6 text-primary mb-3"></i>
-                            <p class="fw-semibold mb-0">Django</p>
-                        </div>
-                    </div>
-
-                    <!-- Bootstrap -->
-                    <div class="col-6 col-sm-4 col-md-3 col-lg-2">
-                        <div class="skill-card text-center p-3 rounded">
-                            <i class="bi bi-bootstrap display-6 text-primary mb-3"></i>
-                            <p class="fw-semibold mb-0">Bootstrap</p>
-                        </div>
-                    </div>
-
-                    <!-- MySQL -->
-                    <div class="col-6 col-sm-4 col-md-3 col-lg-2">
-                        <div class="skill-card text-center p-3 rounded">
-                            <i class="bi bi-database display-6 text-primary mb-3"></i>
-                            <p class="fw-semibold mb-0">MySQL</p>
-                        </div>
-                    </div>
-
-                    <!-- Tailwind -->
-                    <div class="col-6 col-sm-4 col-md-3 col-lg-2">
-                        <div class="skill-card text-center p-3 rounded">
-                            <i class="bi bi-code-slash display-6 text-primary mb-3"></i>
-                            <p class="fw-semibold mb-0">Tailwind</p>
-                        </div>
-                    </div>
-
-                    <!-- FastAPI -->
-                    <div class="col-6 col-sm-4 col-md-3 col-lg-2">
-                        <div class="skill-card text-center p-3 rounded">
-                            <i class="bi bi-lightning display-6 text-primary mb-3"></i>
-                            <p class="fw-semibold mb-0">FastAPI</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Services Section -->
-        <section id="services" class="py-5 bg-light">
-            <div class="container">
-                <h2 class="text-center mb-5 section-title">SERVICES</h2>
-
-                <div class="row g-4">
-                    <div class="col-md-6 col-lg-3">
-                        <div class="service-card h-100 p-4 bg-white rounded shadow-sm text-center">
-                            <i class="bi bi-laptop display-4 text-primary mb-3"></i>
-                            <h3 class="h4 mb-3">Web Development</h3>
-                            <p class="text-muted">I create responsive and dynamic websites using Django, React, and
-                                modern web technologies.</p>
-                        </div>
-                    </div>
-
-                    <div class="col-md-6 col-lg-3">
-                        <div class="service-card h-100 p-4 bg-white rounded shadow-sm text-center">
-                            <i class="bi bi-gear display-4 text-primary mb-3"></i>
-                            <h3 class="h4 mb-3">Custom Projects</h3>
-                            <p class="text-muted">From personal blogs to smart systems, I build tailored solutions that
-                                bring ideas to life.</p>
-                        </div>
-                    </div>
-
-                    <div class="col-md-6 col-lg-3">
-                        <div class="service-card h-100 p-4 bg-white rounded shadow-sm text-center">
-                            <i class="bi bi-database display-4 text-primary mb-3"></i>
-                            <h3 class="h4 mb-3">Database Integration</h3>
-                            <p class="text-muted">Seamless backend integration using MySQL for secure and efficient data
-                                management.</p>
-                        </div>
-                    </div>
-
-                    <div class="col-md-6 col-lg-3">
-                        <div class="service-card h-100 p-4 bg-white rounded shadow-sm text-center">
-                            <i class="bi bi-briefcase display-4 text-primary mb-3"></i>
-                            <h3 class="h4 mb-3">Freelance Solutions</h3>
-                            <p class="text-muted">Offering end-to-end support for small business websites, including
-                                deployment and updates.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Projects Section -->
-        <section id="projects" class="py-5">
-            <div class="container">
-                <h2 class="text-center mb-5 section-title">PROJECTS</h2>
-
-                <div class="row g-4">
-                    <!-- Project 1 -->
-                    <div class="col-md-6 col-lg-4">
-                        <div class="project-card h-100 bg-white rounded shadow-sm overflow-hidden">
-                            <img src="images/09.png" alt="Smart Waste Management System" class="img-fluid w-100">
-                            <div class="p-4">
-                                <h3 class="h5 mb-3">Smart Waste Management System</h3>
-                                <p class="text-muted mb-4">A Django-based platform that tracks waste collection using
-                                    smart bins and AI-powered analytics.</p>
-                                <a href="https://github.com/Saurabh-Singh02/TrashTrack_AI-Powered-Smart-Waste-Management-System"
-                                    target="_blank" class="btn btn-primary w-100">
-                                    View Project
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Project 2 -->
-                    <div class="col-md-6 col-lg-4">
-                        <div class="project-card h-100 bg-white rounded shadow-sm overflow-hidden">
-                            <img src="images/11.png" alt="Blog Application" class="img-fluid w-100">
-                            <div class="p-4">
-                                <h3 class="h5 mb-3">Blog Application</h3>
-                                <p class="text-muted mb-4">A full-stack blog platform built with React and Django with
-                                    SQLite database.</p>
-                                <a href="https://github.com/Saurabh-Singh02/Django-Blog" target="_blank"
-                                    class="btn btn-primary w-100">
-                                    View Project
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Project 3 -->
-                    <div class="col-md-6 col-lg-4">
-                        <div class="project-card h-100 bg-white rounded shadow-sm overflow-hidden">
-                            <img src="images/10.png" alt="To-Do List App" class="img-fluid w-100">
-                            <div class="p-4">
-                                <h3 class="h5 mb-3">To-Do List App</h3>
-                                <p class="text-muted mb-4">A simple and efficient task manager built using React and
-                                    Django with SQLite.</p>
-                                <a href="https://github.com/Saurabh-Singh02/Todo_List" target="_blank"
-                                    class="btn btn-primary w-100">
-                                    View Project
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Project 4 -->
-                    <div class="col-md-6 col-lg-4">
-                        <div class="project-card h-100 bg-white rounded shadow-sm overflow-hidden">
-                            <img src="images/12.png" alt="Weather App" class="img-fluid w-100">
-                            <div class="p-4">
-                                <h3 class="h5 mb-3">Weather App</h3>
-                                <p class="text-muted mb-4">A beautiful and responsive weather application with current
-                                    conditions and forecasts.</p>
-                                <a href="https://github.com/Saurabh-Singh02/weather-app" target="_blank"
-                                    class="btn btn-primary w-100">
-                                    View Project
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Project 5 -->
-                    <div class="col-md-6 col-lg-4">
-                        <div class="project-card h-100 bg-white rounded shadow-sm overflow-hidden">
-                            <img src="images/13.png" alt="Password Generator App" class="img-fluid w-100">
-                            <div class="p-4">
-                                <h3 class="h5 mb-3">Password Generator</h3>
-                                <p class="text-muted mb-4">Generate strong, secure, and unique passwords instantly with
-                                    advanced encryption.</p>
-                                <a href="https://github.com/Saurabh-Singh02/Password-Generator" target="_blank"
-                                    class="btn btn-primary w-100">
-                                    View Project
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Contact Section -->
-        <section id="contact-section" class="py-5 bg-light">
-            <div class="container">
-                <h2 class="text-center mb-5 section-title">CONTACT</h2>
-
-                <div class="row g-5">
-                    <div class="col-lg-8">
-                
-<form class="row g-3" action="https://api.web3forms.com/submit" method="POST">
-
-   <input type="hidden" name="access_key" value="2fe4341b-d221-4b77-b943-eb15b29a1caa">
-    <div class="col-md-6">
-        <input type="text" class="form-control form-control-lg" placeholder="Name" name="name" required>
-    </div>
-
-    <div class="col-md-6">
-        <input type="email" class="form-control form-control-lg" placeholder="Email" name="email" required>
-    </div>
-
-    <div class="col-12">
-        <input type="tel" class="form-control form-control-lg" placeholder="Phone Number" name="phone">
-    </div>
-
-    <div class="col-12">
-        <textarea class="form-control form-control-lg" rows="5" placeholder="Message" name="message" required></textarea>
-    </div>
-
-    <div class="col-12">
-        <button type="submit" class="btn btn-primary btn-lg px-5">Submit</button>
-    </div>
-
-</form>
-
-
-                    </div>
-
-                    <div class="col-lg-4">
-                        <div class="details bg-white p-4 rounded shadow-sm h-100">
-                            <div class="contact-info">
-                                <div class="d-flex align-items-center mb-4">
-                                    <i class="bi bi-telephone-fill text-primary me-3 fs-5"></i>
-                                    <span>+91-8630864432</span>
-                                </div>
-
-                                <div class="d-flex align-items-center mb-4">
-                                    <i class="bi bi-envelope-at-fill text-primary me-3 fs-5"></i>
-                                    <span>ssthakur.code@gmail.com</span>
-                                </div>
-
-                                <div class="social-links mt-5">
-                                    <div class="d-flex justify-content-center gap-3 mb-4">
-                                        <a href="https://www.linkedin.com/in/saurabh-singh-a6a68322a/"
-                                            class="btn btn-outline-primary btn-sm">
-                                            <i class="bi bi-linkedin"></i>
-                                        </a>
-                                        <a href="https://github.com/Saurabh-Singh02"
-                                            class="btn btn-outline-primary btn-sm">
-                                            <i class="bi bi-github"></i>
-                                        </a>
-                                        <a href="https://x.com/Saur_abh_01" class="btn btn-outline-primary btn-sm">
-                                            <i class="bi bi-twitter-x"></i>
-                                        </a>
-                                    </div>
-
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <!-- Footer -->
-    <footer class="bg-primary text-white py-4">
-        <div class="container text-center">
-            <p class="mb-0">&copy; 2025 Saurabh Singh. All rights reserved.</p>
+        <div class="collapse navbar-collapse" id="navMenu">
+          <ul class="navbar-nav ms-auto nav-links">
+            <li class="nav-item"><a class="nav-link" href="#hero">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+            <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contact-section">Contact</a></li>
+          </ul>
+          <button id="theme-button" class="ms-lg-3 mt-3 mt-lg-0" aria-label="Toggle theme">
+            <i class="bi bi-moon-stars-fill"></i>
+          </button>
         </div>
-    </footer>
+      </div>
+    </nav>
+  </header>
 
-    <!-- Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-    <!-- Typed.js -->
-    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
-    <!-- Custom JS -->
-    <script src="index.js"></script>
+  <main>
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+      <div class="container">
+        <div class="row align-items-center g-5">
+          <div class="col-lg-6">
+            <span class="eyebrow"><span class="ping"></span> Available for work</span>
 
-    <script>
-        // Typed.js initialization
-        var typed = new Typed('#element', {
-            strings: ['Full Stack Developer.', 'Python Developer.', 'Django Developer.', 'Problem Solver.'],
-            typeSpeed: 80,
-            backSpeed: 50,
-            loop: true,
-            backDelay: 2000
-        });
-    </script>
+            <h1>
+              Hi, I'm <span class="grad-text">Saurabh Singh</span><br>
+              Full Stack Developer
+            </h1>
+
+            <p class="hero-subtitle">
+              I craft digital experiences through code, turning ideas into functional and beautiful web applications.
+            </p>
+
+            <div class="hero-typed">
+              <span class="label">$ whoami →</span>
+              <span id="element"></span>
+            </div>
+
+            <div class="d-flex flex-wrap gap-3">
+              <a href="Saurabh-Resume.pdf" class="btn-grad">
+                <i class="bi bi-download"></i> Download Resume
+              </a>
+              <a href="#contact-section" class="btn-ghost">
+                <i class="bi bi-envelope"></i> Get In Touch
+              </a>
+            </div>
+
+            <div class="hero-stats">
+              <div class="stat-card">
+                <div class="stat-num">2+</div>
+                <div class="stat-label">Years Experience</div>
+              </div>
+              <div class="stat-card">
+                <div class="stat-num">15+</div>
+                <div class="stat-label">Projects Done</div>
+              </div>
+              <div class="stat-card">
+                <div class="stat-num">10+</div>
+                <div class="stat-label">Happy Clients</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6">
+            <div class="avatar-wrap">
+              <div class="float-badge b1"><i class="bi bi-code-slash"></i> Python · Django</div>
+              <div class="float-badge b2"><i class="bi bi-lightning-charge"></i> SQL</div>
+              <div class="float-badge b3"><i class="fab fa-react"></i> AWS</div>
+              <div class="avatar-ring">
+                <div class="avatar-inner">
+                  <img src="images/profile3.png" alt="Saurabh Singh">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section-pad">
+      <div class="container">
+        <span class="eyebrow">About</span>
+        <h2 class="section-title">A developer who loves <span class="grad-text">clean code</span> &amp; scalable systems</h2>
+        <p class="section-sub">A snapshot of who I am, what I build, and where I've learned it all.</p>
+
+        <div class="about-grid">
+          <div class="about-card glass">
+            <p>
+              Passionate Full Stack Developer from Bareilly, Uttar Pradesh with expertise in
+              creating robust, scalable web applications using modern technologies.
+            </p>
+            <p>
+              I specialize in the <span class="hl">Python web development</span> and
+              <span class="hl">Python Django</span> for building full-stack applications. With a strong foundation in both frontend and backend development, I create seamless digital experiences that solve real-world problems.
+            </p>
+            <p>
+              My technical expertise includes <span class="hl">RESTful API development</span>,
+              <span class="hl">database design</span>, and <span class="hl">cloud deployment</span>. I'm proficient in
+              <span class="hl">React.js</span> for building dynamic user interfaces and
+              <span class="hl">Django</span> for creating secure and scalable backend systems.
+            </p>
+            <p>
+              I'm constantly learning new technologies and frameworks to stay updated with the latest industry trends. Currently exploring <span class="hl">FastAPI</span>,
+              <span class="hl">Pydantic</span>, and <span class="hl">AWS cloud services</span> to enhance my development capabilities.
+            </p>
+
+            <div class="checks">
+              <div class="check-item"><i class="bi bi-check-lg"></i> Full Stack Development</div>
+              <div class="check-item"><i class="bi bi-check-lg"></i> Responsive Web Design</div>
+              <div class="check-item"><i class="bi bi-check-lg"></i> Database Management</div>
+              <div class="check-item"><i class="bi bi-check-lg"></i> API Integration</div>
+            </div>
+          </div>
+
+          <div>
+            <div class="timeline glass">
+              <h3><i class="bi bi-mortarboard-fill"></i> Education</h3>
+
+              <div class="tl-item">
+                <span class="tl-dot"></span>
+                <span class="tl-year">2023 – 2025</span>
+                <div class="tl-title">Master of Computer Applications (MCA)</div>
+                <div class="tl-place"><i class="bi bi-geo-alt"></i> Central University of Haryana, Mahendragarh</div>
+                <ul class="tl-list">
+                  <li>Advanced coursework in Software Engineering, Web Technologies, and Database Systems</li>
+                  <li>Specialized in Full Stack Development and Cloud Computing</li>
+                  <li>Completed major project on AI-Powered Waste Management System</li>
+                  <li>GPA: 7.9/10.0</li>
+                </ul>
+              </div>
+
+              <div class="tl-item">
+                <span class="tl-dot"></span>
+                <span class="tl-year">2019 – 2022</span>
+                <div class="tl-title">Bachelor of Computer Applications (BCA)</div>
+                <div class="tl-place"><i class="bi bi-geo-alt"></i> Bareilly College, Bareilly</div>
+                <ul class="tl-list">
+                  <li>Core foundation in Programming, Data Structures, and Algorithms</li>
+                  <li>Hands-on experience with C, C++, Java, and Web Development</li>
+                  <li>Developed multiple web applications as academic projects</li>
+                  <li>Percentage: 64.90/100.0</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="section-pad" style="background: var(--bg-2);">
+      <div class="container">
+        <span class="eyebrow">Tech Stack</span>
+        <h2 class="section-title">Skills &amp; <span class="grad-text">Tools</span></h2>
+        <p class="section-sub">Technologies I work with day in and day out to build modern web experiences.</p>
+
+        <div class="skill-grid">
+          <div class="skill-tile">
+            <div class="skill-icon"><i class="bi bi-filetype-html"></i></div>
+            <div class="skill-name">HTML</div>
+          </div>
+          <div class="skill-tile">
+            <div class="skill-icon"><i class="bi bi-filetype-css"></i></div>
+            <div class="skill-name">CSS</div>
+          </div>
+          <div class="skill-tile">
+            <div class="skill-icon"><i class="bi bi-filetype-js"></i></div>
+            <div class="skill-name">JavaScript</div>
+          </div>
+          <div class="skill-tile">
+            <div class="skill-icon"><i class="fab fa-react"></i></div>
+            <div class="skill-name">React</div>
+          </div>
+          <div class="skill-tile">
+            <div class="skill-icon"><i class="bi bi-filetype-py"></i></div>
+            <div class="skill-name">Python</div>
+          </div>
+          <div class="skill-tile">
+            <div class="skill-icon"><i class="bi bi-bootstrap-fill"></i></div>
+            <div class="skill-name">Django</div>
+          </div>
+          <div class="skill-tile">
+            <div class="skill-icon"><i class="bi bi-bootstrap"></i></div>
+            <div class="skill-name">Bootstrap</div>
+          </div>
+          <div class="skill-tile">
+            <div class="skill-icon"><i class="bi bi-database-fill"></i></div>
+            <div class="skill-name">MySQL</div>
+          </div>
+          <div class="skill-tile">
+            <div class="skill-icon"><i class="bi bi-wind"></i></div>
+            <div class="skill-name">Tailwind</div>
+          </div>
+          <div class="skill-tile">
+            <div class="skill-icon"><i class="bi bi-lightning-charge-fill"></i></div>
+            <div class="skill-name">FastAPI</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="section-pad">
+      <div class="container">
+        <span class="eyebrow">What I Do</span>
+        <h2 class="section-title">Services I <span class="grad-text">offer</span></h2>
+        <p class="section-sub">From concept to deployment, I help bring digital ideas to life.</p>
+
+        <div class="service-grid">
+          <div class="service-card glass">
+            <div class="service-icon"><i class="bi bi-laptop"></i></div>
+            <h3>Web Development</h3>
+            <p>I create responsive and dynamic websites using Django, React, and modern web technologies.</p>
+          </div>
+          <div class="service-card glass">
+            <div class="service-icon"><i class="bi bi-gear"></i></div>
+            <h3>Custom Projects</h3>
+            <p>From personal blogs to smart systems, I build tailored solutions that bring ideas to life.</p>
+          </div>
+          <div class="service-card glass">
+            <div class="service-icon"><i class="bi bi-database"></i></div>
+            <h3>Database Integration</h3>
+            <p>Seamless backend integration using MySQL for secure and efficient data management.</p>
+          </div>
+          <div class="service-card glass">
+            <div class="service-icon"><i class="bi bi-briefcase"></i></div>
+            <h3>Freelance Solutions</h3>
+            <p>Offering end-to-end support for small business websites, including deployment and updates.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section-pad" style="background: var(--bg-2);">
+      <div class="container">
+        <span class="eyebrow">Portfolio</span>
+        <h2 class="section-title">Featured <span class="grad-text">Projects</span></h2>
+        <p class="section-sub">A selection of things I've built recently — from AI tools to full-stack apps.</p>
+
+        <div class="project-grid">
+          <!-- Project 1 -->
+          <article class="project-card">
+            <div class="project-thumb">
+              <span class="project-tag">Django · AI</span>
+              <img src="images/trashtrack01.png" alt="Smart Waste Management System">
+            </div>
+            <div class="project-body">
+              <h3>Smart Waste Management System</h3>
+              <p>A Django-based platform that tracks waste collection using smart bins and AI-powered analytics.</p>
+              <a class="project-link" href="https://github.com/Saurabh-Singh02/TrashTrack_AI-Powered-Smart-Waste-Management-System" target="_blank">
+                <i class="bi bi-github"></i> View Project <i class="bi bi-arrow-right"></i>
+              </a>
+            </div>
+          </article>
+
+          <!-- Project 2 -->
+          <article class="project-card">
+            <div class="project-thumb">
+              <span class="project-tag">React · Django</span>
+              <img src="images/todo02.png" alt="Blog Application">
+            </div>
+            <div class="project-body">
+              <h3>Blog Application</h3>
+              <p>A full-stack blog platform built with React and Django with SQLite database.</p>
+              <a class="project-link" href="https://github.com/Saurabh-Singh02/Django-Blog" target="_blank">
+                <i class="bi bi-github"></i> View Project <i class="bi bi-arrow-right"></i>
+              </a>
+            </div>
+          </article>
+
+          <!-- Project 3 -->
+          <article class="project-card">
+            <div class="project-thumb">
+              <span class="project-tag">React · SQLite</span>
+              <img src="images/blog03.png" alt="To-Do List App">
+            </div>
+            <div class="project-body">
+              <h3>To-Do List App</h3>
+              <p>A simple and efficient task manager built using React and Django with SQLite.</p>
+              <a class="project-link" href="https://github.com/Saurabh-Singh02/Todo_List" target="_blank">
+                <i class="bi bi-github"></i> View Project <i class="bi bi-arrow-right"></i>
+              </a>
+            </div>
+          </article>
+
+          <!-- Project 4 -->
+          <article class="project-card">
+            <div class="project-thumb">
+              <span class="project-tag">JavaScript</span>
+              <img src="images/weather04.png" alt="Weather App">
+            </div>
+            <div class="project-body">
+              <h3>Weather App</h3>
+              <p>A beautiful and responsive weather application with current conditions and forecasts.</p>
+              <a class="project-link" href="https://github.com/Saurabh-Singh02/weather-app" target="_blank">
+                <i class="bi bi-github"></i> View Project <i class="bi bi-arrow-right"></i>
+              </a>
+            </div>
+          </article>
+
+          <!-- Project 5 -->
+          <article class="project-card">
+            <div class="project-thumb">
+              <span class="project-tag">Security</span>
+              <img src="images/pgen05.png" alt="Password Generator App">
+            </div>
+            <div class="project-body">
+              <h3>Password Generator</h3>
+              <p>Generate strong, secure, and unique passwords instantly with advanced encryption.</p>
+              <a class="project-link" href="https://github.com/Saurabh-Singh02/Password-Generator" target="_blank">
+                <i class="bi bi-github"></i> View Project <i class="bi bi-arrow-right"></i>
+              </a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact-section" class="section-pad">
+      <div class="container">
+        <span class="eyebrow">Get in touch</span>
+        <h2 class="section-title">Let's build something <span class="grad-text">together</span></h2>
+        <p class="section-sub">Have a project in mind? Drop me a line and I'll get back to you soon.</p>
+
+        <div class="contact-grid">
+          <div class="form-card glass">
+            <form action="https://api.web3forms.com/submit" method="POST">
+              <input type="hidden" name="access_key" value="2fe4341b-d221-4b77-b943-eb15b29a1caa">
+
+              <div class="row g-3">
+                <div class="col-md-6 form-group">
+                  <label for="name">Your Name</label>
+                  <input type="text" id="name" class="form-control" placeholder="Jane Doe" name="name" required>
+                </div>
+
+                <div class="col-md-6 form-group">
+                  <label for="email">Email Address</label>
+                  <input type="email" id="email" class="form-control" placeholder="jane@example.com" name="email" required>
+                </div>
+
+                <div class="col-12 form-group">
+                  <label for="phone">Phone Number</label>
+                  <input type="tel" id="phone" class="form-control" placeholder="Optional" name="phone">
+                </div>
+
+                <div class="col-12 form-group">
+                  <label for="message">Message</label>
+                  <textarea id="message" class="form-control" rows="5" placeholder="Tell me about your project..." name="message" required></textarea>
+                </div>
+
+                <div class="col-12">
+                  <button type="submit" class="btn-grad">
+                    <i class="bi bi-send"></i> Send Message
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+
+          <aside class="info-card glass">
+            <div class="info-item">
+              <div class="icon-circle"><i class="bi bi-telephone-fill"></i></div>
+              <div>
+                <div class="lbl">Phone</div>
+                <div class="val">+91-8630864432</div>
+              </div>
+            </div>
+
+            <div class="info-item">
+              <div class="icon-circle"><i class="bi bi-envelope-at-fill"></i></div>
+              <div>
+                <div class="lbl">Email</div>
+                <div class="val">ssthakur.code@gmail.com</div>
+              </div>
+            </div>
+
+            <div class="social-row">
+              <a href="https://www.linkedin.com/in/saurabh-singh-a6a68322a/" aria-label="LinkedIn">
+                <i class="bi bi-linkedin"></i>
+              </a>
+              <a href="https://github.com/Saurabh-Singh02" aria-label="GitHub">
+                <i class="bi bi-github"></i>
+              </a>
+              <a href="https://x.com/Saur_abh_01" aria-label="X (Twitter)">
+                <i class="bi bi-twitter-x"></i>
+              </a>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; 2025 Saurabh Singh. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Typed.js -->
+  <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+  <script src="index.js"></script>
 </body>
-
 </html>
