@@ -63,7 +63,7 @@
     </header>
 
     <main class="pt-2">
-        <!-- Improved Hero Section -->
+        <!-- Hero Section -->
         <section id="hero" class="hero-section py-1">
             <div class="container">
                 <div class="row align-items-center min-vh-100 py-1">
@@ -82,7 +82,7 @@
                                 <span id="element" class="text-primary fw-bold fs-5"></span>
                             </div>
                             <div class="hero-buttons d-flex flex-wrap gap-3">
-                                <a href="resume.pdf" class="btn btn-primary btn-lg px-4 py-2">
+                                <a href="Saurabh-Resume.pdf" class="btn btn-primary btn-lg px-4 py-2">
                                     <i class="bi bi-download me-2"></i>Download Resume
                                 </a>
                                 <a href="#contact-section" class="btn btn-outline-primary btn-lg px-4 py-2">
@@ -125,7 +125,7 @@
             </div>
         </section>
 
-        <!-- Improved About Section -->
+        <!-- About Section -->
         <section id="about" class="py-5 bg-light">
             <div class="container">
                 <h2 class="text-center mb-5 section-title">ABOUT ME</h2>
@@ -142,7 +142,7 @@
 
                             <div class="about-details">
                                 <p class="mb-3">
-                                    I specialize in the <strong class="text-primary">Python web dovelopment</strong> and
+                                    I specialize in the <strong class="text-primary">Python web development</strong> and
                                     <strong class="text-primary">Python Django</strong> for building full-stack
                                     applications. With a strong foundation in both frontend and backend development, I
                                     create seamless digital experiences that solve real-world problems.
@@ -213,10 +213,10 @@
                                                 <h4 class="h5 text-primary mb-1">Master of Computer Applications (MCA)
                                                 </h4>
                                                 <span
-                                                    class="badge bg-primary bg-opacity-10 text-primary small">2022-2024</span>
+                                                    class="badge bg-primary bg-opacity-10 text-primary small">2023-2025</span>
                                             </div>
                                             <p class="text-muted mb-2">
-                                                <i class="bi bi-building me-1"></i>Centrsl University of Haryana,
+                                                <i class="bi bi-building me-1"></i>Central University of Haryana,
                                                 Mahendragarh
                                             </p>
                                             <ul class="education-details list-unstyled small text-muted">
@@ -302,7 +302,6 @@
             </div>
         </section>
 
-        <!-- Rest of the sections remain the same -->
         <!-- Skills Section -->
         <section class="skills py-5">
             <div class="container">
@@ -533,27 +532,33 @@
 
                 <div class="row g-5">
                     <div class="col-lg-8">
-                        <form class="row g-3" action="https://formspree.io/f/xaneadjq" method="POST">
-                            <div class="col-md-6">
-                                <input type="text" class="form-control form-control-lg" placeholder="Name" name="name"
-                                    required>
-                            </div>
-                            <div class="col-md-6">
-                                <input type="email" class="form-control form-control-lg" placeholder="E-mail"
-                                    name="email" required>
-                            </div>
-                            <div class="col-12">
-                                <input type="tel" class="form-control form-control-lg" placeholder="Phone Number"
-                                    name="phone">
-                            </div>
-                            <div class="col-12">
-                                <textarea class="form-control form-control-lg" rows="5" placeholder="Message"
-                                    name="message" required></textarea>
-                            </div>
-                            <div class="col-12">
-                                <button type="submit" class="btn btn-primary btn-lg px-5">Submit</button>
-                            </div>
-                        </form>
+                
+<form class="row g-3" action="https://api.web3forms.com/submit" method="POST">
+
+   <input type="hidden" name="access_key" value="2fe4341b-d221-4b77-b943-eb15b29a1caa">
+    <div class="col-md-6">
+        <input type="text" class="form-control form-control-lg" placeholder="Name" name="name" required>
+    </div>
+
+    <div class="col-md-6">
+        <input type="email" class="form-control form-control-lg" placeholder="Email" name="email" required>
+    </div>
+
+    <div class="col-12">
+        <input type="tel" class="form-control form-control-lg" placeholder="Phone Number" name="phone">
+    </div>
+
+    <div class="col-12">
+        <textarea class="form-control form-control-lg" rows="5" placeholder="Message" name="message" required></textarea>
+    </div>
+
+    <div class="col-12">
+        <button type="submit" class="btn btn-primary btn-lg px-5">Submit</button>
+    </div>
+
+</form>
+
+
                     </div>
 
                     <div class="col-lg-4">
@@ -610,7 +615,7 @@
     <script>
         // Typed.js initialization
         var typed = new Typed('#element', {
-            strings: ['Full Stack Developer.', 'Python Developer.', 'React Developer.', 'Problem Solver.'],
+            strings: ['Full Stack Developer.', 'Python Developer.', 'Django Developer.', 'Problem Solver.'],
             typeSpeed: 80,
             backSpeed: 50,
             loop: true,
