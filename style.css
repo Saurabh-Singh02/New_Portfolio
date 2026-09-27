@@ -872,7 +872,7 @@ footer.site-footer p {
     top: 100%;
     left: 0;
     right: 0;
-    background: var(--surface-glass);
+    background: rgb(24 15 42 / 95%);
     backdrop-filter: blur(18px);
     -webkit-backdrop-filter: blur(18px);
     border-bottom: 1px solid var(--border);
